@@ -1,6 +1,6 @@
 # MeiTuanWaiMai
 
-![](https://github.com/samlaudev/MeiTuanWaiMai/blob/master/ScreenShots/MeiTuanWaiMai.png)
+![](https://raw.githubusercontent.com/samlaudev/MeiTuanWaiMai/master/ScreenShots/MeiTuanWaiMai.png)
 
 由[Sam Lau](http://www.jianshu.com/users/256fb15baf75/latest_articles)用Objective-C编写的一个模拟的[**美团外卖**](http://waimai.meituan.com/removeActAlert?requestUrl=http%3A%2F%2Fwaimai.meituan.com%2F%3Futm_source%3D3603)客户端
 
