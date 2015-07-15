@@ -7,15 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		65CAC159238F677D4107050F /* libPods-MeiTuanWaiMaiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2141AC1935EAF8DDE736EBFB /* libPods-MeiTuanWaiMaiTests.a */; };
 		8F17C6CB1B55F021008779F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F17C6CA1B55F021008779F0 /* main.m */; };
-		8F17C6CE1B55F021008779F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F17C6CD1B55F021008779F0 /* AppDelegate.m */; };
-		8F17C6D11B55F021008779F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F17C6D01B55F021008779F0 /* ViewController.m */; };
-		8F17C6D41B55F021008779F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F17C6D21B55F021008779F0 /* Main.storyboard */; };
 		8F17C6D61B55F021008779F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F17C6D51B55F021008779F0 /* Images.xcassets */; };
-		8F17C6D91B55F021008779F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F17C6D71B55F021008779F0 /* LaunchScreen.xib */; };
 		8F17C6E51B55F021008779F0 /* MeiTuanWaiMaiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F17C6E41B55F021008779F0 /* MeiTuanWaiMaiTests.m */; };
-		F9EF02DF06C184E91FBBB5F9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15E2E2F9A916D06BDA2F8C72 /* libPods.a */; };
+		8F17C70A1B55F560008779F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F17C6FE1B55F560008779F0 /* AppDelegate.m */; };
+		C9C7622F55C6EE7175AC667E /* libPods-MeiTuanWaiMaiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C768491F0D53397C7FF3DC /* libPods-MeiTuanWaiMaiTests.a */; };
+		C9C767882C56D6E26220C498 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C76A53C2B32B2760CBA25E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,24 +26,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		15E2E2F9A916D06BDA2F8C72 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2141AC1935EAF8DDE736EBFB /* libPods-MeiTuanWaiMaiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MeiTuanWaiMaiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		396895412EF2550BD14BAD80 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6D3B99D2393358ED930BFBBE /* Pods-MeiTuanWaiMaiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeiTuanWaiMaiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeiTuanWaiMaiTests/Pods-MeiTuanWaiMaiTests.release.xcconfig"; sourceTree = "<group>"; };
 		8F17C6C51B55F021008779F0 /* MeiTuanWaiMai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeiTuanWaiMai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F17C6C91B55F021008779F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F17C6CA1B55F021008779F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8F17C6CC1B55F021008779F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8F17C6CD1B55F021008779F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8F17C6CF1B55F021008779F0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8F17C6D01B55F021008779F0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8F17C6D31B55F021008779F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F17C6D51B55F021008779F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8F17C6D81B55F021008779F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8F17C6DE1B55F021008779F0 /* MeiTuanWaiMaiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeiTuanWaiMaiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F17C6E31B55F021008779F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F17C6E41B55F021008779F0 /* MeiTuanWaiMaiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeiTuanWaiMaiTests.m; sourceTree = "<group>"; };
+		8F17C6FD1B55F560008779F0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8F17C6FE1B55F560008779F0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C20285A2BE9E053804A79860 /* Pods-MeiTuanWaiMaiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeiTuanWaiMaiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeiTuanWaiMaiTests/Pods-MeiTuanWaiMaiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C9C768491F0D53397C7FF3DC /* libPods-MeiTuanWaiMaiTests.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-MeiTuanWaiMaiTests.a"; path = "../../../../Library/Caches/appCode31/DerivedData/MeiTuanWaiMai-111cc511/Build/Products/Debug-iphoneos/libPods-MeiTuanWaiMaiTests.a"; sourceTree = "<group>"; };
+		C9C76A53C2B32B2760CBA25E /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "../../../../Library/Caches/appCode31/DerivedData/MeiTuanWaiMai-111cc511/Build/Products/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		F19126B08188BB1F9A797037 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9EF02DF06C184E91FBBB5F9 /* libPods.a in Frameworks */,
+				C9C767882C56D6E26220C498 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65CAC159238F677D4107050F /* libPods-MeiTuanWaiMaiTests.a in Frameworks */,
+				C9C7622F55C6EE7175AC667E /* libPods-MeiTuanWaiMaiTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +70,7 @@
 				8F17C6E11B55F021008779F0 /* MeiTuanWaiMaiTests */,
 				8F17C6C61B55F021008779F0 /* Products */,
 				AE6581A34F76F1926F8C590C /* Pods */,
-				9735C02FDDC4083F0CDCB741 /* Frameworks */,
+				C9C766749EB23EC9BD87148F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,13 +86,14 @@
 		8F17C6C71B55F021008779F0 /* MeiTuanWaiMai */ = {
 			isa = PBXGroup;
 			children = (
-				8F17C6CC1B55F021008779F0 /* AppDelegate.h */,
-				8F17C6CD1B55F021008779F0 /* AppDelegate.m */,
-				8F17C6CF1B55F021008779F0 /* ViewController.h */,
-				8F17C6D01B55F021008779F0 /* ViewController.m */,
-				8F17C6D21B55F021008779F0 /* Main.storyboard */,
+				8F17C6FC1B55F560008779F0 /* AppDelegate */,
+				8F17C6FF1B55F560008779F0 /* General */,
+				8F17C7051B55F560008779F0 /* Helpers */,
+				8F17C7061B55F560008779F0 /* Macro */,
+				8F17C7071B55F560008779F0 /* Resource */,
+				8F17C7081B55F560008779F0 /* Sections */,
+				8F17C7091B55F560008779F0 /* Vendor */,
 				8F17C6D51B55F021008779F0 /* Images.xcassets */,
-				8F17C6D71B55F021008779F0 /* LaunchScreen.xib */,
 				8F17C6C81B55F021008779F0 /* Supporting Files */,
 			);
 			path = MeiTuanWaiMai;
@@ -131,13 +125,95 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9735C02FDDC4083F0CDCB741 /* Frameworks */ = {
+		8F17C6FC1B55F560008779F0 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				15E2E2F9A916D06BDA2F8C72 /* libPods.a */,
-				2141AC1935EAF8DDE736EBFB /* libPods-MeiTuanWaiMaiTests.a */,
+				8F17C6FD1B55F560008779F0 /* AppDelegate.h */,
+				8F17C6FE1B55F560008779F0 /* AppDelegate.m */,
 			);
-			name = Frameworks;
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		8F17C6FF1B55F560008779F0 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				8F17C7001B55F560008779F0 /* Categories */,
+				8F17C7011B55F560008779F0 /* Cells */,
+				8F17C7021B55F560008779F0 /* Controllers */,
+				8F17C7031B55F560008779F0 /* DataSources */,
+				8F17C7041B55F560008779F0 /* Views */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		8F17C7001B55F560008779F0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		8F17C7011B55F560008779F0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8F17C7021B55F560008779F0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8F17C7031B55F560008779F0 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		8F17C7041B55F560008779F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8F17C7051B55F560008779F0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8F17C7061B55F560008779F0 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		8F17C7071B55F560008779F0 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		8F17C7081B55F560008779F0 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		8F17C7091B55F560008779F0 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
 			sourceTree = "<group>";
 		};
 		AE6581A34F76F1926F8C590C /* Pods */ = {
@@ -149,6 +225,15 @@
 				6D3B99D2393358ED930BFBBE /* Pods-MeiTuanWaiMaiTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C9C766749EB23EC9BD87148F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9C76A53C2B32B2760CBA25E /* libPods.a */,
+				C9C768491F0D53397C7FF3DC /* libPods-MeiTuanWaiMaiTests.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,8 +321,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F17C6D41B55F021008779F0 /* Main.storyboard in Resources */,
-				8F17C6D91B55F021008779F0 /* LaunchScreen.xib in Resources */,
 				8F17C6D61B55F021008779F0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,8 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F17C6D11B55F021008779F0 /* ViewController.m in Sources */,
-				8F17C6CE1B55F021008779F0 /* AppDelegate.m in Sources */,
+				8F17C70A1B55F560008779F0 /* AppDelegate.m in Sources */,
 				8F17C6CB1B55F021008779F0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,25 +424,6 @@
 			targetProxy = 8F17C6DF1B55F021008779F0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		8F17C6D21B55F021008779F0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8F17C6D31B55F021008779F0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8F17C6D71B55F021008779F0 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8F17C6D81B55F021008779F0 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8F17C6E61B55F021008779F0 /* Debug */ = {
@@ -448,6 +511,7 @@
 			baseConfigurationReference = F19126B08188BB1F9A797037 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = MeiTuanWaiMai/Info.plist;
@@ -463,6 +527,7 @@
 			baseConfigurationReference = 396895412EF2550BD14BAD80 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = MeiTuanWaiMai/Info.plist;
