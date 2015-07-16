@@ -11,6 +11,7 @@ pod 'AMap2DMap', '~> 2.4.2'
 pod 'MBProgressHUD', '~> 0.9.1'
 pod 'Reachability', '~> 3.2'
 pod 'Aspects', '~> 1.4.1'
+pod 'AFNetworking-RACExtensions', '~> 0.1.8'
 
 target :MeiTuanWaiMaiTests, :exclusive => true do
       pod 'Kiwi', '~> 2.3.1'

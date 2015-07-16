@@ -7,24 +7,22 @@
 //
 
 #import "CurrentAddressClient.h"
+#import "URLHelper.h"
 #import <ReactiveCocoa.h>
 #import <AFNetworking.h>
+#import <RACAFNetworking.h>
 
 @implementation CurrentAddressClient
 
-+ (RACSignal *)locateCurrentAddress
++ (instancetype)client
 {
-    RACSubject *signal = [RACSubject subject];
+    return [[[self class] alloc] init];
+}
 
-    [[AFHTTPSessionManager manager] GET:@"http://localhost:12306/v1/city/latlng" parameters:@"" success:^(NSURLSessionDataTask *task, id responseObject) {
-        [signal sendNext:responseObject];
-        [signal sendCompleted];
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        NSLog(@"Network error: %@", error);
-        [signal sendError:error];
-    }];
-
-    return [[signal logError] catchTo:[RACSignal empty]];
+- (RACSignal *)locateCurrentAddress
+{
+    return [[[AFHTTPSessionManager manager] rac_GET:
+            [URLHelper URLWithResourcePath:@"/v1/city/latlng"] parameters:nil] replayLazily] ;
 }
 
 

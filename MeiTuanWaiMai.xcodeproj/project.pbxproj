@@ -11,14 +11,19 @@
 		8F17C6D61B55F021008779F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F17C6D51B55F021008779F0 /* Images.xcassets */; };
 		8F17C70A1B55F560008779F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F17C6FE1B55F560008779F0 /* AppDelegate.m */; };
 		8F17C70C1B560F7F008779F0 /* stylesheet.cas in Resources */ = {isa = PBXBuildFile; fileRef = 8F17C70B1B560F7F008779F0 /* stylesheet.cas */; };
+		8F5331491B57D54200F7EC56 /* CurrentAddressClientSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5331481B57D54200F7EC56 /* CurrentAddressClientSpec.m */; };
+		8F53314B1B57EBF200F7EC56 /* WaiMaiViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F53314A1B57EBF200F7EC56 /* WaiMaiViewControllerSpec.m */; };
+		8FD2649F1B57A5690097D7F0 /* URLHelperSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD2649E1B57A5690097D7F0 /* URLHelperSpec.m */; };
 		C9C7622F55C6EE7175AC667E /* libPods-MeiTuanWaiMaiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C768491F0D53397C7FF3DC /* libPods-MeiTuanWaiMaiTests.a */; };
 		C9C763DACC61514A5F61754E /* settings.json in Resources */ = {isa = PBXBuildFile; fileRef = C9C769C3C4A3277EF779FBD6 /* settings.json */; };
 		C9C76602DE0C3A0B5A7ABC1C /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C7641BBF6324B54E2EACF1 /* MeViewController.m */; };
 		C9C7662CDE23D5DCEE8D8723 /* current_address_response.json in Resources */ = {isa = PBXBuildFile; fileRef = C9C764246552BE7455FC6841 /* current_address_response.json */; };
+		C9C766A713A03FE794519887 /* URLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C76F7131A37E8828A4B3D5 /* URLHelper.m */; };
 		C9C767882C56D6E26220C498 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C76A53C2B32B2760CBA25E /* libPods.a */; };
 		C9C768CAB965FEFAD97E0DAF /* LocationTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C76A07064F1086CD619DB8 /* LocationTitleView.m */; };
 		C9C76A05C6DBFB562CE7173C /* current_address_conf.json in Resources */ = {isa = PBXBuildFile; fileRef = C9C76D7DE0115C64FFCCDEE1 /* current_address_conf.json */; };
 		C9C76B287C2249C9F914AB3F /* WaiMaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C76E6D826C75A9607FD538 /* WaiMaiViewController.m */; };
+		C9C76C430904F81BE95DC49C /* WaiMaiViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C76C604355B1D1B0782B18 /* WaiMaiViewModel.m */; };
 		C9C76C4ACE5968C77B7A6F58 /* CurrentAddressClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C76F329F63B4F55DEB88AF /* CurrentAddressClient.m */; };
 		C9C76EE476D5AFABDE398D4A /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C7661469A29DC1830F1771 /* OrderViewController.m */; };
 /* End PBXBuildFile section */
@@ -46,22 +51,29 @@
 		8F17C6FE1B55F560008779F0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8F17C70B1B560F7F008779F0 /* stylesheet.cas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stylesheet.cas; sourceTree = "<group>"; };
 		8F17C70D1B561FA3008779F0 /* ColorMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorMacro.h; sourceTree = "<group>"; };
+		8F5331481B57D54200F7EC56 /* CurrentAddressClientSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentAddressClientSpec.m; sourceTree = "<group>"; };
+		8F53314A1B57EBF200F7EC56 /* WaiMaiViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaiMaiViewControllerSpec.m; sourceTree = "<group>"; };
+		8FD2649E1B57A5690097D7F0 /* URLHelperSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLHelperSpec.m; sourceTree = "<group>"; };
 		C20285A2BE9E053804A79860 /* Pods-MeiTuanWaiMaiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeiTuanWaiMaiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeiTuanWaiMaiTests/Pods-MeiTuanWaiMaiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C9C762B4883036DEB3E8652A /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
 		C9C7641BBF6324B54E2EACF1 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
 		C9C764246552BE7455FC6841 /* current_address_response.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = current_address_response.json; sourceTree = "<group>"; };
 		C9C7661469A29DC1830F1771 /* OrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
 		C9C766F051DF35E8B1A48810 /* CurrentAddressClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentAddressClient.h; sourceTree = "<group>"; };
+		C9C767032DD10D470004BE99 /* URLHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLHelper.h; sourceTree = "<group>"; };
 		C9C768491F0D53397C7FF3DC /* libPods-MeiTuanWaiMaiTests.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-MeiTuanWaiMaiTests.a"; path = "../../../../Library/Caches/appCode31/DerivedData/MeiTuanWaiMai-111cc511/Build/Products/Debug-iphoneos/libPods-MeiTuanWaiMaiTests.a"; sourceTree = "<group>"; };
 		C9C769432A22E4585AA1ABFE /* OrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
 		C9C7694AE411618660C41C6C /* LocationTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationTitleView.h; sourceTree = "<group>"; };
 		C9C769C3C4A3277EF779FBD6 /* settings.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = settings.json; sourceTree = "<group>"; };
 		C9C76A07064F1086CD619DB8 /* LocationTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationTitleView.m; sourceTree = "<group>"; };
 		C9C76A53C2B32B2760CBA25E /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "../../../../Library/Caches/appCode31/DerivedData/MeiTuanWaiMai-111cc511/Build/Products/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		C9C76A9094EE27467C0B243B /* WaiMaiViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaiMaiViewModel.h; sourceTree = "<group>"; };
 		C9C76C3283EA43190C05188D /* WaiMaiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaiMaiViewController.h; sourceTree = "<group>"; };
+		C9C76C604355B1D1B0782B18 /* WaiMaiViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaiMaiViewModel.m; sourceTree = "<group>"; };
 		C9C76D7DE0115C64FFCCDEE1 /* current_address_conf.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = current_address_conf.json; sourceTree = "<group>"; };
 		C9C76E6D826C75A9607FD538 /* WaiMaiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaiMaiViewController.m; sourceTree = "<group>"; };
 		C9C76F329F63B4F55DEB88AF /* CurrentAddressClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentAddressClient.m; sourceTree = "<group>"; };
+		C9C76F7131A37E8828A4B3D5 /* URLHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLHelper.m; sourceTree = "<group>"; };
 		F19126B08188BB1F9A797037 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,7 +148,8 @@
 			children = (
 				8F17C6E21B55F021008779F0 /* Supporting Files */,
 				C9C76EE576CABD1A1C225F59 /* JSON */,
-				C9C76BB313C17381E64253C4 /* WaiMai */,
+				C9C76BA8D09666397BC41191 /* Helpers */,
+				C9C76B08EBC7820CCBD46629 /* Sections */,
 			);
 			path = MeiTuanWaiMaiTests;
 			sourceTree = "<group>";
@@ -208,6 +221,8 @@
 		8F17C7051B55F560008779F0 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				C9C767032DD10D470004BE99 /* URLHelper.h */,
+				C9C76F7131A37E8828A4B3D5 /* URLHelper.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -273,11 +288,29 @@
 			path = Order;
 			sourceTree = "<group>";
 		};
-		C9C76BB313C17381E64253C4 /* WaiMai */ = {
+		C9C76AB4BC09606747F6D6A9 /* WaiMai */ = {
 			isa = PBXGroup;
 			children = (
+				8F5331481B57D54200F7EC56 /* CurrentAddressClientSpec.m */,
+				8F53314A1B57EBF200F7EC56 /* WaiMaiViewControllerSpec.m */,
 			);
 			path = WaiMai;
+			sourceTree = "<group>";
+		};
+		C9C76B08EBC7820CCBD46629 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				C9C76AB4BC09606747F6D6A9 /* WaiMai */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		C9C76BA8D09666397BC41191 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8FD2649E1B57A5690097D7F0 /* URLHelperSpec.m */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		C9C76C5056D8DA5794780502 /* WaiMai */ = {
@@ -289,6 +322,8 @@
 				C9C76A07064F1086CD619DB8 /* LocationTitleView.m */,
 				C9C766F051DF35E8B1A48810 /* CurrentAddressClient.h */,
 				C9C76F329F63B4F55DEB88AF /* CurrentAddressClient.m */,
+				C9C76A9094EE27467C0B243B /* WaiMaiViewModel.h */,
+				C9C76C604355B1D1B0782B18 /* WaiMaiViewModel.m */,
 			);
 			path = WaiMai;
 			sourceTree = "<group>";
@@ -497,6 +532,8 @@
 				C9C76602DE0C3A0B5A7ABC1C /* MeViewController.m in Sources */,
 				C9C768CAB965FEFAD97E0DAF /* LocationTitleView.m in Sources */,
 				C9C76C4ACE5968C77B7A6F58 /* CurrentAddressClient.m in Sources */,
+				C9C766A713A03FE794519887 /* URLHelper.m in Sources */,
+				C9C76C430904F81BE95DC49C /* WaiMaiViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +541,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F5331491B57D54200F7EC56 /* CurrentAddressClientSpec.m in Sources */,
+				8F53314B1B57EBF200F7EC56 /* WaiMaiViewControllerSpec.m in Sources */,
+				8FD2649F1B57A5690097D7F0 /* URLHelperSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

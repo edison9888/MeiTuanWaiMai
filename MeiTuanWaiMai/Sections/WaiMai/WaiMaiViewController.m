@@ -7,13 +7,14 @@
 //
 
 #import "WaiMaiViewController.h"
-#import "LocationTitleView.h"
-#import "CurrentAddressClient.h"
 #import <ReactiveCocoa.h>
 
 @interface WaiMaiViewController ()
 
+// UI properties
 @property (strong, nonatomic) LocationTitleView* locationTitleView;
+// View Model
+@property (strong, nonatomic) WaiMaiViewModel *viewModel;
 
 @end
 
@@ -27,21 +28,16 @@
     // Setup navigation item's title view
     self.navigationItem.titleView = self.locationTitleView;
 
-    // Send request to get current address and update UI
-    [[[CurrentAddressClient locateCurrentAddress] map:^id(NSDictionary* result) {
-        return result[@"data"][@"detail"];
-    }] subscribeNext:^(NSString* address) {
-        self.locationTitleView.locationLabel.text = address;
-    }];
+    // bind data
+    RAC(self.locationTitleView.locationLabel, text) = RACObserve(self.viewModel, address);
 
     // handle event when click title view
-    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] init];
+    UITapGestureRecognizer* tapGestureRecognizer = [[UITapGestureRecognizer alloc] init];
     tapGestureRecognizer.numberOfTapsRequired = 1;
     [self.locationTitleView addGestureRecognizer:tapGestureRecognizer];
-    [[tapGestureRecognizer rac_gestureSignal] subscribeNext:^(id x) {
+    [[tapGestureRecognizer rac_gestureSignal] subscribeNext:^(id x){
 
     }];
-
 }
 
 #pragma mark - Custom Accessors
@@ -52,6 +48,15 @@
     }
 
     return _locationTitleView;
+}
+
+- (WaiMaiViewModel *)viewModel
+{
+    if (!_viewModel) {
+        _viewModel = [WaiMaiViewModel new];
+    }
+
+    return _viewModel;
 }
 
 @end

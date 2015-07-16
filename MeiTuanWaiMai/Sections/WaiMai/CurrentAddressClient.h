@@ -12,6 +12,8 @@
 
 @interface CurrentAddressClient : NSObject
 
-+ (RACSignal *)locateCurrentAddress;
++ (instancetype)client;
+
+- (RACSignal *)locateCurrentAddress;
 
 @end

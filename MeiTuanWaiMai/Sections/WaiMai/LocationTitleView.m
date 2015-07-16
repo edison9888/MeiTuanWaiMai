@@ -51,7 +51,7 @@
 {
     if (!_locationLabel) {
         _locationLabel = [UILabel new];
-        _locationLabel.text = @"当前位置";
+        _locationLabel.text = @"";
         _locationLabel.font = [UIFont systemFontOfSize:20.0f];
         _locationLabel.textColor = [UIColor whiteColor];
     }
