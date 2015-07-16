@@ -10,4 +10,13 @@
 
 @implementation OrderViewController
 
+#pragma mark - Lifecycle
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+
+    // setup title
+    self.title = @"订单";
+}
+
 @end

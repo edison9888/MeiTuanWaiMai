@@ -30,6 +30,11 @@
     [self.window makeKeyAndVisible];
 
     self.window.rootViewController = [self rootViewController];
+    
+    // customize navigation bar
+    [UINavigationBar appearance].barTintColor = THEME_COLOR;
+    [UINavigationBar appearance].translucent = NO;
+    [UINavigationBar appearance].titleTextAttributes = @{ NSForegroundColorAttributeName : [UIColor whiteColor], NSFontAttributeName : [UIFont systemFontOfSize:20] };
 
     return YES;
 }

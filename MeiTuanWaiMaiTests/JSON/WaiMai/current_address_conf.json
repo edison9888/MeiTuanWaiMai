@@ -1,0 +1,13 @@
+[
+  {
+    "request" :
+    {
+      "uri" : "/v1/city/latlng",
+      "method" : "get"
+    },
+    "response" :
+    {
+      "file" : "./WaiMai/current_address_response.json"
+    }
+  }
+]

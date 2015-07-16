@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		8F17C6CB1B55F021008779F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F17C6CA1B55F021008779F0 /* main.m */; };
 		8F17C6D61B55F021008779F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F17C6D51B55F021008779F0 /* Images.xcassets */; };
-		8F17C6E51B55F021008779F0 /* MeiTuanWaiMaiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F17C6E41B55F021008779F0 /* MeiTuanWaiMaiTests.m */; };
 		8F17C70A1B55F560008779F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F17C6FE1B55F560008779F0 /* AppDelegate.m */; };
 		8F17C70C1B560F7F008779F0 /* stylesheet.cas in Resources */ = {isa = PBXBuildFile; fileRef = 8F17C70B1B560F7F008779F0 /* stylesheet.cas */; };
 		C9C7622F55C6EE7175AC667E /* libPods-MeiTuanWaiMaiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C768491F0D53397C7FF3DC /* libPods-MeiTuanWaiMaiTests.a */; };
+		C9C763DACC61514A5F61754E /* settings.json in Resources */ = {isa = PBXBuildFile; fileRef = C9C769C3C4A3277EF779FBD6 /* settings.json */; };
 		C9C76602DE0C3A0B5A7ABC1C /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C7641BBF6324B54E2EACF1 /* MeViewController.m */; };
+		C9C7662CDE23D5DCEE8D8723 /* current_address_response.json in Resources */ = {isa = PBXBuildFile; fileRef = C9C764246552BE7455FC6841 /* current_address_response.json */; };
 		C9C767882C56D6E26220C498 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C76A53C2B32B2760CBA25E /* libPods.a */; };
+		C9C768CAB965FEFAD97E0DAF /* LocationTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C76A07064F1086CD619DB8 /* LocationTitleView.m */; };
+		C9C76A05C6DBFB562CE7173C /* current_address_conf.json in Resources */ = {isa = PBXBuildFile; fileRef = C9C76D7DE0115C64FFCCDEE1 /* current_address_conf.json */; };
 		C9C76B287C2249C9F914AB3F /* WaiMaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C76E6D826C75A9607FD538 /* WaiMaiViewController.m */; };
+		C9C76C4ACE5968C77B7A6F58 /* CurrentAddressClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C76F329F63B4F55DEB88AF /* CurrentAddressClient.m */; };
 		C9C76EE476D5AFABDE398D4A /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C7661469A29DC1830F1771 /* OrderViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +42,6 @@
 		8F17C6D51B55F021008779F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8F17C6DE1B55F021008779F0 /* MeiTuanWaiMaiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeiTuanWaiMaiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F17C6E31B55F021008779F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F17C6E41B55F021008779F0 /* MeiTuanWaiMaiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeiTuanWaiMaiTests.m; sourceTree = "<group>"; };
 		8F17C6FD1B55F560008779F0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8F17C6FE1B55F560008779F0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8F17C70B1B560F7F008779F0 /* stylesheet.cas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stylesheet.cas; sourceTree = "<group>"; };
@@ -46,12 +49,19 @@
 		C20285A2BE9E053804A79860 /* Pods-MeiTuanWaiMaiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeiTuanWaiMaiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeiTuanWaiMaiTests/Pods-MeiTuanWaiMaiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C9C762B4883036DEB3E8652A /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
 		C9C7641BBF6324B54E2EACF1 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		C9C764246552BE7455FC6841 /* current_address_response.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = current_address_response.json; sourceTree = "<group>"; };
 		C9C7661469A29DC1830F1771 /* OrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
+		C9C766F051DF35E8B1A48810 /* CurrentAddressClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentAddressClient.h; sourceTree = "<group>"; };
 		C9C768491F0D53397C7FF3DC /* libPods-MeiTuanWaiMaiTests.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-MeiTuanWaiMaiTests.a"; path = "../../../../Library/Caches/appCode31/DerivedData/MeiTuanWaiMai-111cc511/Build/Products/Debug-iphoneos/libPods-MeiTuanWaiMaiTests.a"; sourceTree = "<group>"; };
 		C9C769432A22E4585AA1ABFE /* OrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
+		C9C7694AE411618660C41C6C /* LocationTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationTitleView.h; sourceTree = "<group>"; };
+		C9C769C3C4A3277EF779FBD6 /* settings.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = settings.json; sourceTree = "<group>"; };
+		C9C76A07064F1086CD619DB8 /* LocationTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationTitleView.m; sourceTree = "<group>"; };
 		C9C76A53C2B32B2760CBA25E /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "../../../../Library/Caches/appCode31/DerivedData/MeiTuanWaiMai-111cc511/Build/Products/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		C9C76C3283EA43190C05188D /* WaiMaiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaiMaiViewController.h; sourceTree = "<group>"; };
+		C9C76D7DE0115C64FFCCDEE1 /* current_address_conf.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = current_address_conf.json; sourceTree = "<group>"; };
 		C9C76E6D826C75A9607FD538 /* WaiMaiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaiMaiViewController.m; sourceTree = "<group>"; };
+		C9C76F329F63B4F55DEB88AF /* CurrentAddressClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentAddressClient.m; sourceTree = "<group>"; };
 		F19126B08188BB1F9A797037 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,8 +134,9 @@
 		8F17C6E11B55F021008779F0 /* MeiTuanWaiMaiTests */ = {
 			isa = PBXGroup;
 			children = (
-				8F17C6E41B55F021008779F0 /* MeiTuanWaiMaiTests.m */,
 				8F17C6E21B55F021008779F0 /* Supporting Files */,
+				C9C76EE576CABD1A1C225F59 /* JSON */,
+				C9C76BB313C17381E64253C4 /* WaiMai */,
 			);
 			path = MeiTuanWaiMaiTests;
 			sourceTree = "<group>";
@@ -262,11 +273,22 @@
 			path = Order;
 			sourceTree = "<group>";
 		};
+		C9C76BB313C17381E64253C4 /* WaiMai */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WaiMai;
+			sourceTree = "<group>";
+		};
 		C9C76C5056D8DA5794780502 /* WaiMai */ = {
 			isa = PBXGroup;
 			children = (
 				C9C76C3283EA43190C05188D /* WaiMaiViewController.h */,
 				C9C76E6D826C75A9607FD538 /* WaiMaiViewController.m */,
+				C9C7694AE411618660C41C6C /* LocationTitleView.h */,
+				C9C76A07064F1086CD619DB8 /* LocationTitleView.m */,
+				C9C766F051DF35E8B1A48810 /* CurrentAddressClient.h */,
+				C9C76F329F63B4F55DEB88AF /* CurrentAddressClient.m */,
 			);
 			path = WaiMai;
 			sourceTree = "<group>";
@@ -278,6 +300,24 @@
 				C9C7641BBF6324B54E2EACF1 /* MeViewController.m */,
 			);
 			path = Me;
+			sourceTree = "<group>";
+		};
+		C9C76E540A4F3A664584E333 /* WaiMai */ = {
+			isa = PBXGroup;
+			children = (
+				C9C76D7DE0115C64FFCCDEE1 /* current_address_conf.json */,
+				C9C764246552BE7455FC6841 /* current_address_response.json */,
+			);
+			path = WaiMai;
+			sourceTree = "<group>";
+		};
+		C9C76EE576CABD1A1C225F59 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				C9C769C3C4A3277EF779FBD6 /* settings.json */,
+				C9C76E540A4F3A664584E333 /* WaiMai */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +407,9 @@
 			files = (
 				8F17C6D61B55F021008779F0 /* Images.xcassets in Resources */,
 				8F17C70C1B560F7F008779F0 /* stylesheet.cas in Resources */,
+				C9C763DACC61514A5F61754E /* settings.json in Resources */,
+				C9C76A05C6DBFB562CE7173C /* current_address_conf.json in Resources */,
+				C9C7662CDE23D5DCEE8D8723 /* current_address_response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +495,8 @@
 				C9C76B287C2249C9F914AB3F /* WaiMaiViewController.m in Sources */,
 				C9C76EE476D5AFABDE398D4A /* OrderViewController.m in Sources */,
 				C9C76602DE0C3A0B5A7ABC1C /* MeViewController.m in Sources */,
+				C9C768CAB965FEFAD97E0DAF /* LocationTitleView.m in Sources */,
+				C9C76C4ACE5968C77B7A6F58 /* CurrentAddressClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,7 +504,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F17C6E51B55F021008779F0 /* MeiTuanWaiMaiTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,6 +611,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Debug;
 		};
@@ -583,6 +628,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Release;
 		};
