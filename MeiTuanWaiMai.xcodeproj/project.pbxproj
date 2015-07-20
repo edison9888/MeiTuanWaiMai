@@ -17,6 +17,7 @@
 		C9C7622F55C6EE7175AC667E /* libPods-MeiTuanWaiMaiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C768491F0D53397C7FF3DC /* libPods-MeiTuanWaiMaiTests.a */; };
 		C9C763DACC61514A5F61754E /* settings.json in Resources */ = {isa = PBXBuildFile; fileRef = C9C769C3C4A3277EF779FBD6 /* settings.json */; };
 		C9C76602DE0C3A0B5A7ABC1C /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C7641BBF6324B54E2EACF1 /* MeViewController.m */; };
+		C9C7660F949B6015757829F9 /* SwitchLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C7672761B0CF45452990A5 /* SwitchLocationViewController.m */; };
 		C9C7662CDE23D5DCEE8D8723 /* current_address_response.json in Resources */ = {isa = PBXBuildFile; fileRef = C9C764246552BE7455FC6841 /* current_address_response.json */; };
 		C9C766A713A03FE794519887 /* URLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C76F7131A37E8828A4B3D5 /* URLHelper.m */; };
 		C9C767882C56D6E26220C498 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C76A53C2B32B2760CBA25E /* libPods.a */; };
@@ -55,12 +56,14 @@
 		8F53314A1B57EBF200F7EC56 /* WaiMaiViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaiMaiViewControllerSpec.m; sourceTree = "<group>"; };
 		8FD2649E1B57A5690097D7F0 /* URLHelperSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLHelperSpec.m; sourceTree = "<group>"; };
 		C20285A2BE9E053804A79860 /* Pods-MeiTuanWaiMaiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeiTuanWaiMaiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeiTuanWaiMaiTests/Pods-MeiTuanWaiMaiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C9C761470B0DE7A6DD11C1B1 /* SwitchLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchLocationViewController.h; sourceTree = "<group>"; };
 		C9C762B4883036DEB3E8652A /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
 		C9C7641BBF6324B54E2EACF1 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
 		C9C764246552BE7455FC6841 /* current_address_response.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = current_address_response.json; sourceTree = "<group>"; };
 		C9C7661469A29DC1830F1771 /* OrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
 		C9C766F051DF35E8B1A48810 /* CurrentAddressClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentAddressClient.h; sourceTree = "<group>"; };
 		C9C767032DD10D470004BE99 /* URLHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLHelper.h; sourceTree = "<group>"; };
+		C9C7672761B0CF45452990A5 /* SwitchLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchLocationViewController.m; sourceTree = "<group>"; };
 		C9C768491F0D53397C7FF3DC /* libPods-MeiTuanWaiMaiTests.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-MeiTuanWaiMaiTests.a"; path = "../../../../Library/Caches/appCode31/DerivedData/MeiTuanWaiMai-111cc511/Build/Products/Debug-iphoneos/libPods-MeiTuanWaiMaiTests.a"; sourceTree = "<group>"; };
 		C9C769432A22E4585AA1ABFE /* OrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
 		C9C7694AE411618660C41C6C /* LocationTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationTitleView.h; sourceTree = "<group>"; };
@@ -270,6 +273,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C9C7657892D566CEA5E73A81 /* SwitchLocation */ = {
+			isa = PBXGroup;
+			children = (
+				C9C761470B0DE7A6DD11C1B1 /* SwitchLocationViewController.h */,
+				C9C7672761B0CF45452990A5 /* SwitchLocationViewController.m */,
+			);
+			path = SwitchLocation;
+			sourceTree = "<group>";
+		};
 		C9C766749EB23EC9BD87148F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +336,7 @@
 				C9C76F329F63B4F55DEB88AF /* CurrentAddressClient.m */,
 				C9C76A9094EE27467C0B243B /* WaiMaiViewModel.h */,
 				C9C76C604355B1D1B0782B18 /* WaiMaiViewModel.m */,
+				C9C7657892D566CEA5E73A81 /* SwitchLocation */,
 			);
 			path = WaiMai;
 			sourceTree = "<group>";
@@ -534,6 +547,7 @@
 				C9C76C4ACE5968C77B7A6F58 /* CurrentAddressClient.m in Sources */,
 				C9C766A713A03FE794519887 /* URLHelper.m in Sources */,
 				C9C76C430904F81BE95DC49C /* WaiMaiViewModel.m in Sources */,
+				C9C7660F949B6015757829F9 /* SwitchLocationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

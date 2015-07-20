@@ -59,6 +59,15 @@
     return _locationLabel;
 }
 
+- (void)setLocationIconHidden:(BOOL)locationIconHidden
+{
+    _locationIconHidden = locationIconHidden;
+
+    self.currentAddressImageView.hidden = locationIconHidden;
+    self.backItemImageView.hidden = locationIconHidden;
+}
+
+
 - (UIImageView *)currentAddressImageView
 {
     if (!_currentAddressImageView) {

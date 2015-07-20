@@ -7,6 +7,7 @@
 //
 
 #import "WaiMaiViewController.h"
+#import "SwitchLocationViewController.h"
 #import <ReactiveCocoa.h>
 
 @interface WaiMaiViewController ()
@@ -25,9 +26,6 @@
 {
     [super viewDidLoad];
 
-    // Setup navigation item's title view
-    self.navigationItem.titleView = self.locationTitleView;
-
     // bind data
     RAC(self.locationTitleView.locationLabel, text) = RACObserve(self.viewModel, address);
 
@@ -36,8 +34,16 @@
     tapGestureRecognizer.numberOfTapsRequired = 1;
     [self.locationTitleView addGestureRecognizer:tapGestureRecognizer];
     [[tapGestureRecognizer rac_gestureSignal] subscribeNext:^(id x){
-
+        SwitchLocationViewController *destViewController = [[SwitchLocationViewController alloc] init];
+        [self.navigationController pushViewController:destViewController animated:YES];
     }];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+
+    self.tabBarController.navigationItem.titleView = self.locationTitleView;
 }
 
 #pragma mark - Custom Accessors

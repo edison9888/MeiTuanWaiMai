@@ -13,5 +13,6 @@
 @interface LocationTitleView : SHPAbstractView
 
 @property (strong, nonatomic) UILabel *locationLabel;
+@property (assign, nonatomic, getter=isLocationIconHidden) BOOL locationIconHidden;
 
 @end

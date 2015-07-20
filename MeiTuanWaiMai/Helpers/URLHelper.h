@@ -9,8 +9,8 @@
 
 #import <Foundation/Foundation.h>
 
-//static NSString *const MTWMBaseURL = @"http://192.168.3.100:12306";
-static NSString *const MTWMBaseURL = @"http://192.168.1.106:12306";
+static NSString *const MTWMBaseURL = @"http://192.168.3.157:12306";
+//static NSString *const MTWMBaseURL = @"http://192.168.1.106:12306";
 
 @interface URLHelper : NSObject
 

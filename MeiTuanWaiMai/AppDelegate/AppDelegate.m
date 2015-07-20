@@ -67,7 +67,7 @@
 }
 
 #pragma mark - Helper methods
-- (UITabBarController*)rootViewController
+- (UIViewController*)rootViewController
 {
     UITabBarController* tabBarController = [[UITabBarController alloc] init];
 
@@ -76,7 +76,6 @@
     MeViewController* meViewController = [[MeViewController alloc] init];
 
     NSArray* subControllers = @[ waiMaiViewController, orderViewController, meViewController ];
-    NSMutableArray* tabSubControllers = [[NSMutableArray alloc] init];
 
     NSArray* titles = @[ @"外卖", @"订单", @"我的" ];
     NSArray* tabImageNames = @[ @"icon_tabbar_home", @"icon_tabbar_order", @"icon_tabbar_mine" ];
@@ -85,15 +84,13 @@
     [subControllers enumerateObjectsUsingBlock:^(UIViewController* controller, NSUInteger idx, BOOL* stop) {
         UITabBarItem* tabBarItem = [[UITabBarItem alloc] initWithTitle:titles[idx] image:[UIImage imageNamed:tabImageNames[idx]] selectedImage:[UIImage imageNamed:tabSelectedImageNames[idx]]];
         controller.tabBarItem = tabBarItem;
-        UINavigationController* navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
-        [tabSubControllers addObject:navigationController];
     }];
-    tabBarController.viewControllers = tabSubControllers;
+    tabBarController.viewControllers = subControllers;
 
     // Setup tab bar's tint color
     [[UITabBar appearance] setTintColor:THEME_COLOR];
 
-    return tabBarController;
+    return [[UINavigationController alloc] initWithRootViewController:tabBarController];
 }
 
 @end

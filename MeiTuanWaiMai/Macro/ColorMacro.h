@@ -15,5 +15,6 @@
 
 // App Colors
 #define THEME_COLOR UIColorFromRGB(0xFB4F44)
+#define BACKGROUND_COLOR UIColorFromRGB(0xF6F6F6)
 
 #endif

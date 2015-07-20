@@ -7,6 +7,14 @@
 //
 
 #import "OrderViewController.h"
+#import "LocationTitleView.h"
+
+@interface OrderViewController()
+
+// UI properties
+@property (strong, nonatomic) LocationTitleView* locationTitleView;
+
+@end
 
 @implementation OrderViewController
 
@@ -15,8 +23,25 @@
 {
     [super viewDidLoad];
 
-    // setup title
-    self.title = @"订单";
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+
+    self.tabBarController.navigationItem.titleView = self.locationTitleView;
+}
+
+#pragma mark - Custom Accessors
+- (LocationTitleView*)locationTitleView
+{
+    if (!_locationTitleView) {
+        _locationTitleView = [[LocationTitleView alloc] initWithFrame:CGRectMake(0, 0, 250, 32)];
+        _locationTitleView.locationIconHidden = YES;
+        _locationTitleView.locationLabel.text = @"订单";
+    }
+
+    return _locationTitleView;
 }
 
 @end
