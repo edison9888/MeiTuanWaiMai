@@ -19,7 +19,17 @@
 
     // setup title and background
     self.title = @"切换位置";
-    self.view.backgroundColor = BACKGROUND_COLOR;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+
 }
 
 @end

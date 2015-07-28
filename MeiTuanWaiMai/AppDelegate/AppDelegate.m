@@ -11,6 +11,7 @@
 #import "OrderViewController.h"
 #import "MeViewController.h"
 #import "ColorMacro.h"
+#import "SinglePointCustomizationIntercepter.h"
 
 @interface AppDelegate ()
 
@@ -34,7 +35,12 @@
     // customize navigation bar
     [UINavigationBar appearance].barTintColor = THEME_COLOR;
     [UINavigationBar appearance].translucent = NO;
-    [UINavigationBar appearance].titleTextAttributes = @{ NSForegroundColorAttributeName : [UIColor whiteColor], NSFontAttributeName : [UIFont systemFontOfSize:20] };
+    [UINavigationBar appearance].titleTextAttributes = @{ NSForegroundColorAttributeName : [UIColor whiteColor], NSFontAttributeName : [UIFont systemFontOfSize:20.0f] };
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60)
+                                                         forBarMetrics:UIBarMetricsDefault];
+    // Setup intercepter
+    SinglePointCustomizationIntercepter *intercepter = [SinglePointCustomizationIntercepter new];
+    [intercepter setupIntercepter];
 
     return YES;
 }

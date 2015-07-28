@@ -15,7 +15,7 @@
 // UI properties
 @property (strong, nonatomic) LocationTitleView* locationTitleView;
 // View Model
-@property (strong, nonatomic) WaiMaiViewModel *viewModel;
+@property (strong, nonatomic) WaiMaiViewModel* viewModel;
 
 @end
 
@@ -26,17 +26,8 @@
 {
     [super viewDidLoad];
 
-    // bind data
-    RAC(self.locationTitleView.locationLabel, text) = RACObserve(self.viewModel, address);
-
-    // handle event when click title view
-    UITapGestureRecognizer* tapGestureRecognizer = [[UITapGestureRecognizer alloc] init];
-    tapGestureRecognizer.numberOfTapsRequired = 1;
-    [self.locationTitleView addGestureRecognizer:tapGestureRecognizer];
-    [[tapGestureRecognizer rac_gestureSignal] subscribeNext:^(id x){
-        SwitchLocationViewController *destViewController = [[SwitchLocationViewController alloc] init];
-        [self.navigationController pushViewController:destViewController animated:YES];
-    }];
+    [self bindData];
+    [self handleEvents];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -56,13 +47,32 @@
     return _locationTitleView;
 }
 
-- (WaiMaiViewModel *)viewModel
+- (WaiMaiViewModel*)viewModel
 {
     if (!_viewModel) {
         _viewModel = [WaiMaiViewModel new];
     }
 
     return _viewModel;
+}
+
+#pragma mark - Bind Data
+- (void)bindData
+{
+    RAC(self.locationTitleView.locationLabel, text) = RACObserve(self.viewModel, address);
+}
+
+#pragma mark - Respond to Actions
+- (void)handleEvents
+{
+    // handle event when click title view
+    UITapGestureRecognizer* tapGestureRecognizer = [[UITapGestureRecognizer alloc] init];
+    tapGestureRecognizer.numberOfTapsRequired = 1;
+    [self.locationTitleView addGestureRecognizer:tapGestureRecognizer];
+    [[tapGestureRecognizer rac_gestureSignal] subscribeNext:^(id x) {
+        SwitchLocationViewController* destViewController = [[SwitchLocationViewController alloc] init];
+        [self.navigationController pushViewController:destViewController animated:YES];
+    }];
 }
 
 @end
